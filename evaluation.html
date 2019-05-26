@@ -1,0 +1,86 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="fr">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Évaluation d</title>
+</head>
+<script src="controle.js"></script>
+<body onload="return generecaptcha();">
+
+<p align="center"><font size="6">Évaluation d'un hôtel</font></p>
+<form method="POST" action="evaluation.php" name="f" onsubmit="return verif();">
+	<p align="center"><b>Hôtel: </b>
+	<select size="1" name="D1" style="font-weight: 700">
+	<option selected>Choisir un hotel</option>
+	<option value="10">5 Stars</option>
+	<option value="20">Globe</option>
+	<option value="30">The Sun</option>
+	</select></p>
+	<table border="1" width="100%" bordercolorlight="#000000" bordercolordark="#000000">
+		<tr>
+			<td width="159" bordercolorlight="#000000" bordercolordark="#000000">
+			<p align="center"><b>Accueil:</b></td>
+			<td bordercolorlight="#000000" bordercolordark="#000000">
+			<p align="left">
+			<input type="radio" value="3" name="R1" style="font-weight: 700"><b>Très 
+			satisfaisant&nbsp; </b>
+			<input type="radio" value="2" name="R1" style="font-weight: 700"><b>&nbsp; 
+			Satisfaisant&nbsp; </b>
+			<input type="radio" value="1" name="R1" style="font-weight: 700"><b> 
+			Peu satisfaisant</b></td>
+		</tr>
+		<tr>
+			<td width="159">
+			<p align="center"><b>Restauration:</b></td>
+			<td>
+			<p align="left">
+			<input type="radio" value="3" name="R2" style="font-weight: 700"><b>Très 
+			satisfaisant&nbsp; </b>
+			<input type="radio" value="2" name="R2" style="font-weight: 700"><b>&nbsp; 
+			Satisfaisant&nbsp; </b>
+			<input type="radio" value="1" name="R2" style="font-weight: 700"><b> 
+			Peu satisfaisant</b></td>
+		</tr>
+		<tr>
+			<td width="159">
+			<p align="center"><b>Extra:</b></td>
+			<td>
+			<p align="left">
+			<input type="checkbox" name="C1" value="4" style="font-weight: 700"><b>Piscine 
+			Couverte</b></p>
+			<p align="left">
+			<input type="checkbox" name="C2" value="2" style="font-weight: 700"><b> 
+			Plage Privée</b></p>
+			<p align="left">
+			<input type="checkbox" name="C3" value="1" style="font-weight: 700"><b> 
+			Couverture WIFI</b></td>
+		</tr>
+		<tr>
+			<td width="159">
+			<p align="center">&nbsp;</td>
+			<td>
+			<p align="center"><b>Captcha: </b>
+			<input name="T1" size="20" style="font-weight: 700"><input type="button" value="Actualiser" name="B1" style="font-weight: 700" onclick="return generecaptcha();"></p>
+			<p align="center"><b>Combien de lettre Majuscules dans la Zone 
+			Captcha ?</b></p>
+			<p align="center"><b>Réponse: </b>
+			<input name="T2" size="20" style="font-weight: 700"></td>
+		</tr>
+	</table>
+
+<table border="0" width="100%">
+	<tr>
+		<td width="4" align="right">&nbsp;</td>
+		<td align="right">
+			<p><b></b><input type="reset" value="Annuler" name="B2" style="font-weight: 700"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</b>
+			<input type="submit" value="Valider" name="B3" style="font-weight: 700"></p>
+	
+		<p>&nbsp;</td>
+	</tr>
+</table>
+	</form>
+</body>
+
+</html>
